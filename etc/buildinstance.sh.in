@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+top="$$1"
+python="$$2"
+prefix="$$3"
+
+echo "top: $$top"
+echo "python: $$python"
+echo "prefix: $$prefix"
+
+cd "$$top/parts/zope" && \
+    ./configure --prefix="$$prefix" --with-python="$$python" &&\
+    make && \
+    make install && \
+    ./parts/zope/bin/mkzopeinstance.py
