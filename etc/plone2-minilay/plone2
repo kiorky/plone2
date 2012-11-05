@@ -1,0 +1,9 @@
+[minibuild]
+dependencies=git-1.7 python-2.3
+install_method=buildout
+src_uri=ssh://git@github.com/kiorky/plone2.git
+src_type=git
+category=zope
+homepage=
+description=
+buildout_config=minitage.buildout.cfg
